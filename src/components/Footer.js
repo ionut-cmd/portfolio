@@ -1,11 +1,16 @@
 import React from 'react';
-import './Footer.css';
-
+import { Typography, Box, Container } from '@material-ui/core';
 
 function Footer() {
   return (
     <footer>
-      <p>© 2023 My Portfolio. All rights reserved.</p>
+      <Box bgcolor="#354f52" color="white" py={3}>
+        <Container maxWidth="md">
+          <Typography variant="body1" align="center">
+            © 2023 Ionut Bostan. All rights reserved.
+          </Typography>
+        </Container>
+      </Box>
     </footer>
   );
 }

@@ -1,40 +1,21 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Project from './components/Project';
+import HuggingFaceProject from './components/HuggingFaceProject';
 import projects from './data/projects';
 
 function App() {
   return (
     <div>
       <Header />
-      {projects.map(project => <Project key={project.id} project={project} />)}
+      {projects.map(project => {
+        if (project.id === 'huggingface') {
+          return <HuggingFaceProject key={project.id} project={project} />;
+        } else {
+          return <Project key={project.id} project={project} />;
+        }
+      })}
       <Footer />
     </div>
   );

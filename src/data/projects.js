@@ -9,6 +9,11 @@ const projects = [
     name: 'Project 2',
     // add more project details here
   },
+  {
+    id: 'huggingface',
+    name: 'Hugging Face Project',
+    // add more project details here
+  },
 ];
 
 export default projects;

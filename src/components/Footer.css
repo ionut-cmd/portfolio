@@ -1,5 +1,5 @@
-footer {
-    background-color: #0f62fe;
+/* footer {
+    background-color: #354f52;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -7,9 +7,10 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    position: fixed;
 }
 
 footer p {
     margin: 0;
     font-size: 1.2em;
-}
+} */
