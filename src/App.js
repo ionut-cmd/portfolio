@@ -1,24 +1,46 @@
 import React from 'react';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+import './index.css';
+
+
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Project from './components/Project';
+import About from './components/About';
+import Skills from './components/Skills';
 import HuggingFaceProject from './components/HuggingFaceProject';
-import projects from './data/projects';
+
+
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#000000',
+    },
+    secondary: {
+      main: '#ff0000',
+    },
+     background: {
+      default: '#354f52', // the color you want
+    },
+  },
+});
+
+
+
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <div>
       <Header />
-      {projects.map(project => {
-        if (project.id === 'huggingface') {
-          return <HuggingFaceProject key={project.id} project={project} />;
-        } else {
-          return <Project key={project.id} project={project} />;
-        }
-      })}
+       <About />
+       <Skills />
+       <HuggingFaceProject/>
       <Footer />
     </div>
+    </ThemeProvider>
   );
 }
+
 
 export default App;
