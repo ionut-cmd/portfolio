@@ -34,6 +34,9 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 120,
     maxWidth: 300,
   },
+    heading: {
+    color: 'white',
+  },
 }));
 
 const HuggingFaceProject = () => {
@@ -73,8 +76,11 @@ const HuggingFaceProject = () => {
       // style={{ backgroundColor: '#354f52', color: 'white' }}
     >
         <Container maxWidth="md">
+        <Typography variant="h2" align="center" className={classes.heading} gutterBottom>
+          HuggingFace Project
+        </Typography>
           <div className={classes.huggingFaceProjectContainer}>
-            <h2>Hugging Face Project</h2>
+            <h2>Emotion-Aware Text To Speach</h2>
             <form onSubmit={handleSubmit}>
               <Box md={2}>
                 <FormControl component="fieldset">

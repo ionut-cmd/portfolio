@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Typography, makeStyles, Box } from '@material-ui/core';
-import eu from "../images/eu.png";
+import eu from "../assets/images/eu.png";
 import { Link } from 'react-scroll';
 import '../App.css';
 
@@ -79,6 +79,17 @@ function Header() {
             activeClass={classes.activeLink}
           >
             Skills
+          </Link>
+          <Link 
+            to="projects" 
+            spy={true} 
+            smooth={true} 
+            offset={-70} 
+            duration={500} 
+            className={classes.link} 
+            activeClass={classes.activeLink}
+          >
+            Projects
           </Link>
           <Link 
             to="huggingfaceproject" 

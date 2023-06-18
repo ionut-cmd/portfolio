@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Skills from './components/Skills';
 import HuggingFaceProject from './components/HuggingFaceProject';
+import Projects from './components/Projects';
 
 
 
@@ -35,6 +36,7 @@ function App() {
       <Header />
        <About />
        <Skills />
+       <Projects/>
        <HuggingFaceProject/>
       <Footer />
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, makeStyles, Link } from '@material-ui/core';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import eu from "../images/eu.png";
+import eu from "../assets/images/eu.png";
 
 const useStyles = makeStyles((theme) => ({
   aboutContainer: {

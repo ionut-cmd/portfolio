@@ -7,7 +7,7 @@ function Footer() {
       <Box bgcolor="#354f52" color="white" py={6}>
         <Container maxWidth="md">
           <Typography variant="body1" align="center">
-            © 2023 Ionut Bostan. All rights reserved.
+            © 2023 Ionut Bostan.
           </Typography>
         </Container>
       </Box>
